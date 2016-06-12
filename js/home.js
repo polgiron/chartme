@@ -4,7 +4,7 @@ $(document).ready(function() {
   // CONST & VAR
 
   var RECT_VIEWPORT_HEIGHT = 250;
-  var RECT_TOP_PADDING = 40;
+  var RECT_TOP_PADDING = 50;
   var RECT_BOTTOM_PADDING = 150;
 
   var paperWidth = 400;

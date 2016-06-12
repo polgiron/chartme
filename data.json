@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "label" : "aa",
+      "value" : 20,
+      "color": "#4DAF7C"
+    },
+    {
+      "label" : "value2",
+      "value" : 50,
+      "color": "#F4D03F"
+    },
+    {
+      "label" : "value3",
+      "value" : 70,
+      "color": "#E74C3C"
+    },
+    {
+      "label" : "value3",
+      "value" : 20,
+      "color": "#E74C3C"
+    },
+    {
+      "label" : "value3",
+      "value" : 55,
+      "color": "#E74C3C"
+    }
+  ]
+}

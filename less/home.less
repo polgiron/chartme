@@ -1,0 +1,82 @@
+@import url("../common/less/common.less");
+
+@bgColor : #ecf0f1;
+@mainColor : rgba(52, 73, 94,1.0);
+@mainColorLight : rgba(52, 73, 94, .6);
+
+body {
+	background: @bgColor;
+	color: @mainColor;
+}
+
+#main-wrapper {
+	max-width: 600px;
+	margin: auto;
+	margin-top: 3em;
+	padding: 1em;
+	// background: RED;
+
+	@media @mobile {
+		margin-top: 0;
+	}
+}
+
+header {
+	
+	h1 {
+		font-size: 3rem;
+		font-weight: 300;
+		line-height: 1;
+	}
+}
+
+#textarea-wrapper {
+	margin-top: 1em;
+
+	textarea {
+		padding: .3em .6em;
+		background: white;
+		border: 1px solid @mainColor;
+		.border-radius(3px);
+		resize: none;
+		width: 100%;
+		height: 200px;
+		display: block;
+	}
+
+	#button-wrapper {
+		display: flex;
+		margin-top: .5em;
+
+		button {
+			background: transparent;
+			border: 1px solid @mainColor;
+			padding: .3em .6em;
+			.border-radius(3px);
+			.transition();
+
+			&:hover {
+				background: @mainColor;
+				color: @bgColor;
+			}
+
+			i {
+				margin-right: .2em;
+			}
+
+			&:first-child {
+				margin-left: auto;
+				margin-right: .5em;
+			}
+		}
+	}
+}
+
+#chart-wrapper {
+	// border: 1px solid @mainColor;
+	// padding: 1em;
+	margin-top: 1em;
+	// display: inline-block;
+	// width: 300px;
+	// height: 350px;
+}

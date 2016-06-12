@@ -18,8 +18,11 @@
 	<script src="common/js/lib/font-awesome.js"></script>
 	<script src="common/js/lib/jquery-2.1.1.min.js"></script>
 	<script src="common/js/lib/raphael.min.js"></script>
+	<script src="common/js/lib/store.min.js"></script>
 	<!-- <script src="common/js/common.js"></script> -->
-	<script src="js/home.js"></script>
+	<!-- <script src="js/home.js"></script> -->
+	<script src="common/js/common.min.js"></script>
+	<script src="js/home.min.js"></script>
 </head>
 <body>
 	<!-- MAIN WRAPPER -->

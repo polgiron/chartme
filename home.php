@@ -20,35 +20,40 @@
 	<script src="common/js/lib/raphael.min.js"></script>
 	<script src="common/js/lib/store.min.js"></script>
 	<!-- <script src="common/js/common.js"></script> -->
-	<!-- <script src="js/home.js"></script> -->
 	<script src="common/js/common.min.js"></script>
+	<!-- <script src="js/home.js"></script> -->
 	<script src="js/home.min.js"></script>
 </head>
 <body>
 	<!-- MAIN WRAPPER -->
-	<div id="main-wrapper">
-		
-		<!-- HEADER -->
-		<header>
-			<a href="./">
-				<h1>Chart me</h1>
-			</a>
-		</header>
+	<div id="main-wrapper" class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="content">
+					<!-- HEADER -->
+					<header>
+						<a href="./">
+							<h1>Chart me</h1>
+						</a>
+					</header>
 
-		<!-- TEXT AREA WRAPPER -->
-		<div id="textarea-wrapper">
-			<textarea id="data"></textarea>
-			<div id="button-wrapper">
-				<button id="clear">
-					<i class="fa fa-eraser"></i> Clear
-				</button>
-				<button id="run">
-					<i class="fa fa-bar-chart"></i> Chart me!
-				</button>
+					<!-- TEXT AREA WRAPPER -->
+					<div id="textarea-wrapper">
+						<textarea id="data"></textarea>
+						<div id="button-wrapper">
+							<button id="clear">
+								<i class="fa fa-eraser"></i> Clear
+							</button>
+							<button id="run">
+								<i class="fa fa-bar-chart"></i> Chart me!
+							</button>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
 
-		<!-- CHART WRAPPER -->
-		<div id="chart-wrapper"></div>
+			<!-- CHART WRAPPER -->
+			<div id="chart-wrapper" class="col-md-6"></div>
+		</div>
 	</div>
 </body>

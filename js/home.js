@@ -7,8 +7,8 @@ $(document).ready(function() {
   var RECT_TOP_PADDING = 40;
   var RECT_BOTTOM_PADDING = 150;
 
-  // var paperWidth = 400;
-  var paperWidth = $('#chart-wrapper').outerWidth();
+  var paperWidth = 400;
+  // var paperWidth = $('#chart').outerWidth();
   var PAPER_HEIGHT = RECT_VIEWPORT_HEIGHT + RECT_TOP_PADDING + RECT_BOTTOM_PADDING;
 
   var paperPaddingLeft = 15;
@@ -25,6 +25,7 @@ $(document).ready(function() {
     // We remove old graph
     $('#chart').remove();
     $('#chart-wrapper').append('<div id="chart"></div>');
+    paperWidth = $('#chart').outerWidth();
     var paper = Raphael('chart', paperWidth, PAPER_HEIGHT);
 
     // Check the biggest value
@@ -156,7 +157,7 @@ $(document).ready(function() {
   // Make the chart a bit responsive
   $(window).resize(function(event) {
     var data = $('#data').val();
-    paperWidth = $('#chart-wrapper').outerWidth();
+    paperWidth = $('#chart').outerWidth();
     
     if(data != undefined && data != ''){
       data = JSON.parse(data.replace(/\r?\n/g, ''));

@@ -1,4 +1,4 @@
-@import url("../common/less/common.less");
+@import url("../common/less/base.less");
 
 @bgColor : #ecf0f1;
 @mainColor : rgba(52, 73, 94,1.0);
@@ -10,13 +10,14 @@ body {
 }
 
 #main-wrapper {
-	max-width: 600px;
-	margin: auto;
 	margin-top: 3em;
-	padding: 1em;
 
 	@media @mobile {
 		margin-top: 0;
+	}
+
+	.content{
+		padding: 1em;
 	}
 }
 

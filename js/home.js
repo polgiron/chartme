@@ -24,7 +24,7 @@ $(document).ready(function() {
   var drawChart = function(data){
     // We remove old graph
     $('#chart').remove();
-    $('#chart-wrapper').append('<div id="chart"></div>');
+    $('#chart-wrapper .content').append('<div id="chart"></div>');
     paperWidth = $('#chart').outerWidth();
     var paper = Raphael('chart', paperWidth, PAPER_HEIGHT);
 
@@ -157,7 +157,8 @@ $(document).ready(function() {
   // Make the chart a bit responsive
   $(window).resize(function(event) {
     var data = $('#data').val();
-    paperWidth = $('#chart').outerWidth();
+    paperWidth = $('#chart').width();
+    // console.log(paperWidth);
     
     if(data != undefined && data != ''){
       data = JSON.parse(data.replace(/\r?\n/g, ''));

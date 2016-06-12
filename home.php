@@ -53,7 +53,9 @@
 			</div>
 
 			<!-- CHART WRAPPER -->
-			<div id="chart-wrapper" class="col-md-6"></div>
+			<div id="chart-wrapper" class="col-md-6">
+				<div class="content"></div>
+			</div>
 		</div>
 	</div>
 </body>
